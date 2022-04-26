@@ -84,11 +84,11 @@ section{
     top:0; left: 0;
     z-index: 999;
     background: rgb(191, 0, 255);
-    width: 30rem;
+    width: 25rem;
     border-right:rgb(191, 0, 255);
     height: 100%;
     padding:2rem;
-    text-align: center;
+
 }
 
 .header .user img{
@@ -149,6 +149,30 @@ section{
 #menu-btn:hover{
     color:rgb(191, 0, 255);
     box-shadow: var(--box-shadow-inset);
+}
+
+.home .share{
+    position: relative;
+    top: 10rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    padding:1rem;
+}
+
+.home .share a{
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: var(--box-shadow);
+    margin:.5rem;
+    font-size: 2rem;
+    color:var(--black);
+    border-radius: .5rem;
+}
+
+.home .share a:hover{
+    box-shadow: var(--box-shadow-inset);
+    color:rgb(191, 0, 255);
 }
 
 .home{
@@ -300,31 +324,33 @@ section{
 
 }
 
-.contact .share{
-    position: relative;
-    top: 5rem;
-    left: 5rem;
+.contact form{
+    margin:1rem auto;
+    max-width: 70rem;
     border-radius: .5rem;
-    padding:3rem 38rem;
-
-    
-}
-
-.contact .share a{
-    height: 5rem;
-    width: 5rem;
-    line-height: 5rem;
     box-shadow: var(--box-shadow);
-    margin:.5rem;
-    font-size: 4rem;
-    color:var(--black);
-    border-radius: .5rem;
-
+    padding:2rem;
 }
 
-.contact .share a:hover{
+.contact form .box{
+    padding:1rem 1.5rem;
+    width:100%;
+    background: none;
+    color:var(--black);
+    font-size: 1.6rem;
+    text-transform: none;
+    margin:.7rem 0;
+    box-shadow: var(--box-shadow);
+    border-radius: .5rem;
+}
+
+.contact form textarea{
+    height: 20rem;
+    resize: none;
+}
+
+.contact form .box:focus{
     box-shadow: var(--box-shadow-inset);
-    color:rgb(191, 0, 255);
 }
 
 
@@ -340,19 +366,6 @@ section{
 .credits span{
     color: rgb(191, 0, 255);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -374,7 +387,7 @@ section{
 
     .header.active{
         left:0%;
-        transition: .4s linear;
+        transition: .3s linear;
     }
 
     #menu-btn{
@@ -390,8 +403,19 @@ section{
     }
 
     .header{
-        width:100%;
+
         border-right: 0;
     }
 
 }
+
+
+
+
+
+
+
+
+
+
+
